@@ -1,0 +1,10 @@
+<div id='product_order_<%= product.id %>'>
+  <h4><%= link_to product.name, product_path(product), remote:true %></h4>
+  <p><%= product.description %></p>
+  <p><%= number_to_currency product.price %></p>
+  <%= form_for @order_item, :remote=>true do |f| %>
+    <%= f.hidden_field :product_id, value: product.id %>
+    <%= f.number_field :quantity, :min=>'1' %>
+    <span class="waves-effect waves-light btn"><%= f.submit "Add to cart" %></span>
+  <% end %>
+</div>

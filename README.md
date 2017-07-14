@@ -27,7 +27,7 @@ Refactoring of existing e-commerce codebase with minimal commit history. Main go
 * PostgreSQL
 
 ## Known Bugs
-* Spec tests accounting for deleting products is failing, capybara won't select the correct option from the alert confirmation.
+* Cart treats the same item added twice as separate instances, should update the total of the existing cart itme. 
 
 ## Future Updates
 * Add categories navigation to drop down in the navbar.
