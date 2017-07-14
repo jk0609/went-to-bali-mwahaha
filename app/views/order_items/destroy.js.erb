@@ -1,1 +1,3 @@
 $('#nav_cart').text("Cart | Total items: "+<%=current_order.order_items.length%>)
+
+$('#item_cart_'+<%=@item.id%>).remove()
