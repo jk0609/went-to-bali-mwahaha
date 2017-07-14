@@ -37,7 +37,7 @@ Refactoring of existing e-commerce codebase with minimal commit history. Main go
 * Flash messages added for user sign in, sign out and sign up actions.
 * CRUD functionality added for products if signed in as an admin.
 * Flash messages added for admin product CRUD actions.
-*
+* Adds validations for products, can't be made without all 3 attributes. Also adds error messages to new and edit forms.
 
 ### License
 MIT
