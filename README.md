@@ -29,13 +29,15 @@ Refactoring of existing e-commerce codebase with minimal commit history. Main go
 ## Known Issues
 * Cart treats the same item added twice as separate instances, should update the total of the existing cart items.
 * CRUD test for products and users need JS enabled.
+* Added and edited products are moved to the bottom of the list.
 
 ## Refactoring
+* AJAX functionality added to cart in navbar, shopping cart view(when deleting items) and product listings(when viewing details).
 * Users can no longer order 0 or negative quantities of an item.
 * Flash messages added for user sign in, sign out and sign up actions.
 * CRUD functionality added for products if signed in as an admin.
 * Flash messages added for admin product CRUD actions.
-* 
+*
 
 ### License
 MIT
