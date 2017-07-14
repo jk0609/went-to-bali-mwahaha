@@ -11,12 +11,12 @@ class Seed
   def self.begin
     seed = Seed.new
     seed.generate_products
-    User.create(
-      name: 'admin',
-      email: 'admin@admin.com',
-      password_digest: '123456',
-      admin: true
-    )
+    user = User.new
+    user.name = 'admin'
+    user.email = 'admin@admin.com'
+    user.password = '123456'
+    user.admin = true
+    user.save!
   end
 
   def generate_products

@@ -9,4 +9,9 @@
     <li>Lorem ipsum</li>
     <li>Lorem ipsum</li>
   </ol>
+  <% if current_user.admin %>
+    <%= link_to 'Edit Product', edit_product_path(product), class:"waves-effect waves-light btn green"%>
+    <br>
+    <%= link_to "Delete Product", product_path(product), :data => {:confirm => "Warning: This will delete this product permanently.", :method => "delete"}, class:"waves-effect waves-light btn red" %>
+  <% end %>
 </div>
